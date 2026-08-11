@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    a(href="/update-cobj") Add to this table
+    h1 My Dogs
+    table
+      thead
+        tr
+          th Name
+          th Age
+          th Breed
+      tbody
+        each record in records
+          tr
+            td= record.properties.dogs_name
+            td= record.properties.dogs_age
+            td= record.properties.dogs_breed

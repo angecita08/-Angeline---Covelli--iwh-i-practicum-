@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    a(href="/") Return to the homepage
+    h1 Add a New Record
+    form(action="/update-cobj", method="POST")
+      div
+        label(for="dogs_name") Dog Name
+        input(type="text", id="dogs_name", name="dogs_name", required)
+      div
+        label(for="dogs_age") Dog Age
+        input(type="number", id="dogs_age", name="dogs_age", required)
+      div
+        label(for="dogs_breed") Dog Breed
+        input(type="text", id="dogs_breed", name="dogs_breed", required)
+      div
+        button(type="submit") Submits
